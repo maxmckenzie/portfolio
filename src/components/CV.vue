@@ -1,11 +1,12 @@
 <template>
   <div class="content">
+    <a href="javascript:window.print()" class="print">Print CV</a>
     <article class="cv">
       <h1>Max M<sup>c</sup>Kenzie</h1>
       <h2>Full Stack Developer, QA tester and Technical writer</h2>
       <p><b>Portfolio:</b> <a href="http://maxmckenzie.uk">maxmckenzie.uk</a></p>
-      <p><b>email:</b> <a href="mailto:hello@maxmckenzie.uk">hello@maxmckenzie.uk</a></p>
-      <p><b>Stack Overflow:</b> <a href="https://stackoverflow.com/users/3593217/xam">stackoverflow.com/users/3593217/xam</a></p>
+      <p><b>Email:</b> <a href="mailto:hello@maxmckenzie.uk">hello@maxmckenzie.uk</a></p>
+      <p><b>StackOverflow:</b> <a href="https://stackoverflow.com/users/3593217/xam">stackoverflow.com/users/3593217/xam</a></p>
       <p><b>Github:</b> <a href="https://github.com/maxmckenzie">github.com/maxmckenzie</a></p>
       <p><b>Linkedin:</b> <a href="https://www.linkedin.com/in/maxmckenzie">linkedin.com/in/maxmckenzie</a></p>
       <hr>
@@ -25,7 +26,7 @@
           </ul>
         </li>
       </ul>
-      <abilites></abilites>
+      <!-- <abilites></abilites> -->
       <h2>Education</h2>
       <ul>
         <li v-for="institute in apiData.education">
@@ -53,13 +54,20 @@ export default {
 <style lang="less">
 @media print {
   body {
-    font-size: 16px;
+    font-size: 14px;
+    line-height:1.1;
+  }
+  .print {
+    display:none;
   }
   .logo,
   header {
     display: none;
   }
   .cv {
+    h1 {
+      margin:0 0 1rem 0;
+    }
     h2 {
       margin:1.5rem 0rem 0rem 0rem;
       font-weight: 800

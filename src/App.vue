@@ -12,6 +12,7 @@
       <a href="https://stackoverflow.com/story/maxmckenzie" target="_blank">StackOverflow</a>
       <a href="https://github.com/maxmckenzie" target="_blank">Github</a>
       <a href="https://es.linkedin.com/in/maxmckenzie" target="_blank">LinkedIn</a>
+      <a href="https://seam.es" target="_blank">seam.es</a>
     </header>
     <br>
     <img src="./assets/logo.png" class="logo">
@@ -73,8 +74,9 @@ export default {
   max-width:80rem;
 }
 #app header a {
-  padding:0.5rem 0.5rem 0.5rem 0;
+  padding:0.25rem 0.5rem 0.25rem 0;
   font-weight: 500;
+  display:inline-block;
 }
 .logo {
   position: fixed;
