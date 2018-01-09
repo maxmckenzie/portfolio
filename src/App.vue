@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <header>
+      <h1>I draw things, <br> then I code them</h1>
       <router-link :to=" { name: 'Index' }">Home</router-link>
       <router-link :to=" { name: 'WorkHistory' }">Work History</router-link>
       <router-link :to=" { name: 'Skills' }">Skills</router-link>
       <!-- <router-link :to=" { name: 'Code' }">Code</router-link> -->
       <router-link :to=" { name: 'Projects' }">Projects</router-link>
-      <router-link :to=" { name: 'Education' }">Education</router-link>
       <router-link :to=" { name: 'CV' }">Printable CV</router-link>
       <br>
       <a href="https://stackoverflow.com/story/maxmckenzie" target="_blank">StackOverflow</a>
@@ -18,12 +18,16 @@
     <transition name="slide-fade">
       <router-view :apiData="apiData"></router-view>
     </transition>
+    <back-to-top text="Back to top" visibleOffset="200"></back-to-top>
   </div>
 </template>
 
 <script>
+import BackToTop from './components/BackToTop'
+
 export default {
   name: 'app',
+  components: { BackToTop },
   data () {
     return {
       apiData: {
@@ -54,6 +58,8 @@ export default {
 
 <style lang="less">
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
 
 #app {
   font-family: 'Libre Franklin', Helvetica, Arial, sans-serif;
@@ -62,7 +68,9 @@ export default {
   line-height: 1.5;
   font-weight: 400;
   color: #2c3e50;
-  margin:1rem;
+  padding:0 1rem 4rem 1rem;
+  margin:0 auto;
+  max-width:80rem;
 }
 #app header a {
   padding:0.5rem 0.5rem 0.5rem 0;
@@ -82,12 +90,23 @@ h1 {
   line-height: 1.2
 }
 pre, p {
-  max-width:45rem;
-  margin-right:250px;
+  max-width:35rem;
   white-space: pre-line;
 }
 pre {
   white-space: pre-wrap;
+  font-size:0.85rem;
+  font-family: 'Space Mono', monospace;
+  background-color:lighten(#eee, 5%);
+  border:1px solid lighten(#ccc, 5%);
+  box-shadow:0px 0px 1px 1px lighten(#ccc, 15%);
+  border-radius:0.25rem;
+  padding:0.5rem;
+}
+
+pre code {
+  font-family: 'Space Mono', monospace;
+  
 }
 
 .slide-fade-enter-active {

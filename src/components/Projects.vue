@@ -28,6 +28,10 @@ export default {
   margin:0;
   padding:0;
   max-width:50rem;
+  p {
+    padding-bottom:1rem;
+    border-bottom: 1px solid #eee;
+  }
   &__tags {
     list-style: none;
     max-width:40rem;

@@ -1,6 +1,5 @@
 <template>
   <div class="content">
-    <h1>I draw things, <br> then I code them</h1>
     <p>Full Stack Developer, QA tester and Technical writer</p>
     <p>This site is built with Vue and Webpack. It uses an <a href="http://api.maxmckenzie.uk/" target="_blank">API</a> I've built to scrape data from my Github and Stack Overflow profiles, allowing me to access more content than is available via their API's (well i mean and its way easier).</p>
     <p>If you feel so inclined, you can access all the data via the below curl command</p>
@@ -10,8 +9,8 @@
     <pre><code>apiData.details</code></pre> 
     <pre class="responce">{{ apiData.details }}</pre>
     <blockquote cite="http://www.adultswim.com/videos/rick-and-morty/">
-      "Sometimes science is more art than science Morty"
-      ... Rick
+      Sometimes science is more art than science Morty
+      <br>... Rick
     </blockquote>
   </div>
 </template>
@@ -26,5 +25,17 @@ export default {
 <style>
   blockquote {
     font-weight: 600;
+    position: fixed;
+    bottom: 0;
+    right: 1rem;
+    width: 10rem;
+  }
+  blockquote:before {
+    content: '"';
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 900;
+    top:-0.75rem;
+    left:-1.25rem;
   }
 </style>
