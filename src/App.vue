@@ -2,19 +2,17 @@
   <div id="app">
     <header>
       <h1>I draw things, <br> then I code them</h1>
-      <router-link :to=" { name: 'Index' }">Home</router-link>
-      <router-link :to=" { name: 'WorkHistory' }">Work History</router-link>
-      <router-link :to=" { name: 'Skills' }">Skills</router-link>
+      <router-link :to=" { name: 'Index' }">H0ME</router-link>
+      <router-link :to=" { name: 'WorkHistory' }">W0RK</router-link>
+      <router-link :to=" { name: 'Skills' }">SKILLS</router-link>
       <!-- <router-link :to=" { name: 'Code' }">Code</router-link> -->
-      <router-link :to=" { name: 'Projects' }">Projects</router-link>
-      <router-link :to=" { name: 'CV' }">Printable CV</router-link>
-      <br>
-      <a href="https://stackoverflow.com/story/maxmckenzie" target="_blank">StackOverflow</a>
-      <a href="https://github.com/maxmckenzie" target="_blank">Github</a>
-      <a href="https://es.linkedin.com/in/maxmckenzie" target="_blank">LinkedIn</a>
-      <a href="https://seam.es" target="_blank">seam.es</a>
+      <router-link :to=" { name: 'Projects' }">PR0JECTS</router-link>
+      <router-link :to=" { name: 'CV' }">PRINT-CV</router-link>
+      <a href="https://seam.es" target="_blank">/si:m/</a>
+      <a href="https://stackoverflow.com/story/maxmckenzie" target="_blank"><img src="./assets/stackoverflow.svg"></a>
+      <a href="https://github.com/maxmckenzie" target="_blank"><img src="./assets/github.svg"></a>
+      <a href="https://es.linkedin.com/in/maxmckenzie" target="_blank"><img src="./assets/linkedin.svg"></a>
     </header>
-    <br>
     <img src="./assets/logo.png" class="logo">
     <transition name="slide-fade">
       <router-view :apiData="apiData"></router-view>
@@ -73,10 +71,56 @@ export default {
   margin:0 auto;
   max-width:80rem;
 }
+#app .content {
+  padding-top:1rem;
+}
+#app .content,
+header h1 {
+  padding-left:0.5rem;
+}
 #app header a {
-  padding:0.25rem 0.5rem 0.25rem 0;
-  font-weight: 500;
+  color:#2c2c2c;
+  padding:0.25rem 0.25rem 0.25rem 0.25rem;
+  margin:0.25rem;
+  font-weight: 800;
+  font-family: 'Space Mono', monospace;
+  font-size:1.1rem;
   display:inline-block;
+  text-decoration:none;
+  position: relative;
+  -webkit-font-smoothing: never;
+  -moz-osx-font-smoothing: never;
+  img {
+    width:1.5rem;
+    height:auto;
+  }
+}
+#app header a:visited,
+#app header a:active,
+#app header a:focus {
+  color:#2c2c2c;
+}
+#app header a:after {
+  content: '';
+  position: absolute;
+  color:#2c2c2c;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 0.15rem solid #2c2c2c;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
+}
+#app header a:hover:after,
+#app header a.router-link-exact-active:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 .logo {
   position: fixed;
@@ -109,6 +153,10 @@ pre {
 pre code {
   font-family: 'Space Mono', monospace;
   
+}
+
+a {
+  font-weight:500;
 }
 
 .slide-fade-enter-active {

@@ -59,6 +59,8 @@ export default {
   }
   .print {
     display:none;
+    margin-top:1rem;
+    display:block;
   }
   .logo,
   header {
