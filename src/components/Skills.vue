@@ -1,6 +1,6 @@
 <template>
     <div class="content">
-      <pre class="responce">{{ apiData.skills }}</pre>
+      <pre class="responce">Currently working with {{ apiData.skills }}</pre>
       <abilites></abilites>
     </div>
 </template>

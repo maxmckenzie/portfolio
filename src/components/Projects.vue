@@ -4,9 +4,7 @@
         <li v-for="project in apiData.projects">
           <h2>{{ project.title }}</h2>
           <a :href="project.url">{{ project.url }}</a>
-          <p>
-            {{ project.description }}
-          </p>
+          <p>{{ project.description }}</p>
           <ul class="projects__tags">
             <li v-for="tag in project.tags">
               <small>{{ tag }},</small>
@@ -28,11 +26,12 @@ export default {
 .projects {
   list-style: none;
   margin:0;
+  padding:0;
   max-width:50rem;
   &__tags {
     list-style: none;
     max-width:40rem;
-    margn:0;
+    margin:0;
     padding:0 0 0 0.5rem;
     li {
       display: inline-flex;

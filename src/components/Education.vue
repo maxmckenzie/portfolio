@@ -15,5 +15,3 @@ export default {
   props: ['apiData']
 }
 </script>
-
-<style></style>

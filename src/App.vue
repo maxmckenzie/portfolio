@@ -7,6 +7,7 @@
       <!-- <router-link :to=" { name: 'Code' }">Code</router-link> -->
       <router-link :to=" { name: 'Projects' }">Projects</router-link>
       <router-link :to=" { name: 'Education' }">Education</router-link>
+      <router-link :to=" { name: 'CV' }">Printable CV</router-link>
       <br>
       <a href="https://stackoverflow.com/story/maxmckenzie" target="_blank">StackOverflow</a>
       <a href="https://github.com/maxmckenzie" target="_blank">Github</a>
@@ -14,7 +15,9 @@
     </header>
     <br>
     <img src="./assets/logo.png" class="logo">
-    <router-view :apiData="apiData"></router-view>
+    <transition name="slide-fade">
+      <router-view :apiData="apiData"></router-view>
+    </transition>
   </div>
 </template>
 
@@ -74,7 +77,7 @@ export default {
 }
 h1 {
   font-size: 4rem;
-  margin:1.5rem 0 2.5rem 0;
+  margin:1.5rem 0 2rem 0;
   font-weight: 900;
   line-height: 1.2
 }
@@ -85,5 +88,18 @@ pre, p {
 }
 pre {
   white-space: pre-wrap;
+}
+
+.slide-fade-enter-active {
+  transition: all .5s ease;
+  transition-delay: .5s
+}
+.slide-fade-leave-active {
+  transition: all .5s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(40px);
+  opacity: 0;
 }
 </style>
