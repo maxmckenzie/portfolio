@@ -23,8 +23,10 @@
         <!-- <abilites></abilites> -->
         <div class="info">
           <h3>Contact</h3>
-          <p><b>Portfolio:</b> <a href="http://maxmckenzie.uk">maxmckenzie.uk</a></p>
+          <p><b>Portfolio:</b> <a href="https://maxmckenzie.uk">maxmckenzie.uk</a></p>
           <p><b>Email:</b> <a href="mailto:hello@maxmckenzie.uk">hello@maxmckenzie.uk</a></p>
+          <p><b>GitHub:</b> <a href="https://github.com/maxmckenzie">/maxmckenzie</a></p>
+          <p><b>StafckOverflow:</b> <a href="https://stackoverflow.com/story/maxmckenzie">@xam</a></p>
           <div class="education">
             <h3>Education</h3>
             <ul>
@@ -103,7 +105,7 @@ article {
   p {
     column-count: 2;
     column-gap:0.75rem;
-    orphans: 4;
+    orphans: 3;
   }
 }
 
@@ -123,6 +125,7 @@ article {
 .referance p {
   margin-bottom:0.5rem;
   display:block;
+  font-size:0.75rem;
 }
 
 .referance p + p {
@@ -202,12 +205,25 @@ article {
     box-shadow:0 0 0 0 lighten(#ccc, 10%);
   }
   @page {
-    size: 21cm 29.7cm;
+    size: A4;
     margin: 5mm 5mm 5mm 5mm; /* change the margins as you want them to be. */
   }
-  body {
-    line-height:1.1;
+  h1, h2, h3, h4, h5 {
+    page-break-after: avoid;
   }
+  h3 {
+    page-break-before: always;
+  }
+  p {
+    page-break-inside: avoid;
+    page-break-after: avoid;
+  }
+  @page:right{
+    @bottom-right {
+      content: "Page " counter(page) " of " counter(pages);
+    }
+  }
+
   .print {
     display:none;
     margin-top:1rem;
