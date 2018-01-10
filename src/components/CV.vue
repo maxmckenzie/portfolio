@@ -6,13 +6,7 @@
       <h2>Full Stack Developer, QA tester and Technical writer</h2>
       <p><b>Portfolio:</b> <a href="http://maxmckenzie.uk">maxmckenzie.uk</a></p>
       <p><b>Email:</b> <a href="mailto:hello@maxmckenzie.uk">hello@maxmckenzie.uk</a></p>
-      <p><b>StackOverflow:</b> <a href="https://stackoverflow.com/users/3593217/xam">stackoverflow.com/users/3593217/xam</a></p>
-      <p><b>Github:</b> <a href="https://github.com/maxmckenzie">github.com/maxmckenzie</a></p>
-      <p><b>Linkedin:</b> <a href="https://www.linkedin.com/in/maxmckenzie">linkedin.com/in/maxmckenzie</a></p>
-      <hr>
-      <p>Originally from Bath, Somerset. I started out with music technology when I was fourteen, then moved into the computer development world, introduced by the majority of my friends, who also work in the trade.
-      <p>I created a record label in 2008 and found the need to learn a multitude of development skills when creating the website. From that point onwards, I was asked by people around me to build websites for them on a freelance basis. I moved to London to do a degree in commercial music at Westminster but soon discovered that I didn't want to pursue commercial music as a career and I made the jump to become a full-time developer.</p>
-      <p>I've spent most of my time on the front end but then, that line got very blurred in recent years, and I directed my learning towards NodeJS, APIs, DevOps, and testing</p>
+      <br>
       <h2>Work History</h2>
       <ul>
         <li v-for="role in apiData.workhistory">
@@ -52,6 +46,9 @@ export default {
 
 
 <style lang="less">
+.print {
+  display:block;
+}
 @media print {
   body {
     font-size: 14px;
@@ -60,7 +57,6 @@ export default {
   .print {
     display:none;
     margin-top:1rem;
-    display:block;
   }
   .logo,
   header {
@@ -69,17 +65,15 @@ export default {
   .cv {
     h1 {
       margin:0 0 1rem 0;
+      font-size:2rem;
     }
     h2 {
-      margin:1.5rem 0rem 0rem 0rem;
+      margin:0rem 0rem 0rem 0rem;
       font-weight: 800
     }
     h3 {
       margin:1rem 0rem 0.75rem 0rem;
     }
-
-    margin:0 auto;
-    width:55rem;
     .date {
       font-size: 0.9rem;
       color: lighten(#2c2c2c, 10%);
