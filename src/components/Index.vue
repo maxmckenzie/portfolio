@@ -1,9 +1,8 @@
 <template>
   <div class="content">
-    <p>This site is built with Vue and Webpack. It uses an <a href="http://api.maxmckenzie.uk/" target="_blank">API</a> I've built to scrape data from my Github and Stack Overflow profiles, allowing me to access more content than is available via their API's (well i mean and its way easier).</p>
-    <p>If you feel so inclined, you can access all the data via the below curl command</p>
+    <p>This portfolio is built with Vue and Webpack. It uses a simple node <a href="http://api.maxmckenzie.uk/" target="_blank">API</a> which scrapes data from GitHub and StackOverflow. If you feel so inclined, you can access all my CV and portfolio data via the below curl command.</p>
     <pre class="request"><code class>$ curl http://api.maxmckenzie.uk/</code></pre>
-    <p>You can find the source code for this thing your looking at right now! <a href="https://github.com/maxmckenzie/portfolio">the front end vue app</a> and the <a href="https://github.com/maxmckenzie/portfolio-api">API</a> on Github</p>
+    <p>You can find the source code for <a href="https://github.com/maxmckenzie/portfolio">This vue app</a> and the <a href="https://github.com/maxmckenzie/portfolio-api">API</a> on Github</p>
     <p>The more data heavy endpoints on this site I've templated out to make it easier to read. But for simple lists (like below) I've just outputted the raw JSON</p>
     <pre><code>apiData.details</code></pre> 
     <pre class="responce">{{ apiData.details }}</pre>
