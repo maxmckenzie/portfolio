@@ -63,6 +63,12 @@ export default {
   opacity: 0;
 }
 
+@media print {
+  .vue-back-to-top {
+    display:none;
+  }
+}
+
 .vue-back-to-top{
   position: fixed;
   bottom: 1rem;

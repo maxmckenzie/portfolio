@@ -127,7 +127,7 @@ header h1 {
   top:1rem;
   right:0;
   width:250px;
-  z-index: 0;
+  z-index: -1;
 }
 h1 {
   font-size: 4rem;
