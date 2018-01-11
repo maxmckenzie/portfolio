@@ -114,6 +114,15 @@ article {
   width:32%;
 }
 
+@media screen and (max-width: 630px) { 
+  .cv-content > div.work {
+    width:100%;
+  }
+  .cv-content > div.info {
+    width:100%;
+  }
+}
+
 .referance {
   display:block;
   background-color: #eee;

@@ -129,6 +129,17 @@ header h1 {
   width:250px;
   z-index: -1;
 }
+
+@media (max-width: 800px) { 
+  .logo {
+    width:6rem;
+  }
+
+  blockquote {
+    display:none;
+  }
+}
+
 h1 {
   font-size: 4rem;
   margin:1.5rem 0 2rem 0;
