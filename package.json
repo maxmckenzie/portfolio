@@ -6,9 +6,10 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
+    "postinstall": "npm run build",
     "dev": "webpack-dev-server --inline --progress --config config/webpack.base.conf.js",
     "lint": "eslint --ext .js,.vue src",
-    "build": "node build/build.js"
+    "build": "webpack --config config/webpack.base.conf.js"
   },
   "dependencies": {
     "connect-history-api-fallback": "^1.5.0",
@@ -64,7 +65,8 @@
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-dev-server": "^2.9.1",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.1.11",
     "webpack-merge": "^4.1.0"
   },
   "engines": {

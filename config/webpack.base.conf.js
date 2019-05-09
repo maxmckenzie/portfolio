@@ -17,14 +17,14 @@ module.exports = {
   entry: mainPath,
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: __dirname + '/dist/',
+    contentBase: resolve('/dist/'),
     hot: true,
     host: 'localhost',
     port: 8080,
     historyApiFallback: true
   },
   output: {
-    path: __dirname + "/dist",
+    path: resolve('/dist/'),
     filename: "bundle.js",
     chunkFilename: '[name].js'
   },

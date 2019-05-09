@@ -64,7 +64,6 @@
             </ul>
           </div>
         </div>
-        <div class="references__overlay"></div>
       </div>
     </article>
   </div>

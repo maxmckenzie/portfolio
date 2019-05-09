@@ -1,14 +1,13 @@
-const history = require('connect-history-api-fallback')
-const express = require('express')
+var history = require('connect-history-api-fallback');
+var express = require('express');
 
-const app = express()
-
+var app = express();
 app.use(history({
-  index: '/',
-  verbose: true
-}))
+  index: 'index.html',
+  logger: console.log.bind(console)
+}));
 
-app.use('/static', express.static(process.cwd() + '/dist/static'))
+app.use('/', express.static(process.cwd() + '/dist'))
 
 app.get('/', function (req, res) {
   res.sendFile(process.cwd() + '/dist/index.html')
