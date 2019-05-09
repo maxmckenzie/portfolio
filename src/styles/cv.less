@@ -1,0 +1,225 @@
+.cv-wrapper {
+  position: relative;
+  max-width:50rem;
+}
+
+.print {
+  position: absolute;
+  right:1rem;
+  top:1rem;
+  display:inline-block;
+  background-color:@color-neutral-800;
+  color:@color-neutral-100;
+  border-radius:1rem;
+  padding:0.2rem 0.2rem 0.3rem 0.2rem;
+  font-size:@a0;
+
+  span {
+    padding:0.25rem 0.5rem 0.25rem 1rem;
+    vertical-align: bottom;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color:@color-neutral-100;
+  }
+  
+  i {
+    color:@color-neutral-100;
+    vertical-align: text-top;
+    text-align: center;
+    background-color: @color-neutral-600;
+    padding:0.25rem;
+    border-radius:100%;
+  }
+}
+
+article {
+  border:1px solid @color-neutral-400;
+  padding: 1rem;
+  background-color:white;
+  z-index:9999;
+  .drop-shadow(2);
+}
+
+.cv-content {
+  display: flex;
+}
+
+.cv-content > div {
+  display:inline-block;
+  vertical-align:top;
+}
+
+.cv-content > div.work {
+  page-break-after  : auto ;
+  width:65%;
+  margin-right:2%;
+  p {
+    column-count: 2;
+    column-gap:0.75rem;
+    orphans: 3;
+  }
+}
+
+.cv-content > div.info {
+  width:32%;
+}
+
+@media screen and (max-width: 630px) { 
+  .cv-content > div.work {
+    width:100%;
+  }
+  .cv-content > div.info {
+    width:100%;
+  }
+}
+
+.reference {
+  display:block;
+  background-color: @color-neutral-100;
+  padding:0.5rem;
+  border-radius:0.25rem;
+  border:1px solid @color-neutral-400;
+  margin-bottom: 1rem;
+}
+
+.reference p {
+  margin-bottom:0.5rem;
+  display:block;
+  font-size:0.75rem;
+}
+
+.reference p + p {
+  font-size:0.75rem;
+  font-weight:600;
+  padding:0.5rem 0 0 0;
+  text-align:right;
+}
+
+.cv {
+  h1, h2 {
+    color:@color-neutral-800;
+  }
+  h1 {
+    margin:0 0 0.75rem 0;
+    font-size:2rem;
+  }
+  h2 {
+    margin:1rem 0rem 0.5rem 0rem;
+    font-weight: 800;
+    font-size:1.1rem;
+  }
+  h3 {
+    margin:1rem 0rem 0.25rem 0rem;
+    font-size:1rem;
+  }
+  h4 {
+    margin:0.5rem 0rem 0.25rem 0rem;
+    font-weight:500;
+    font-size:0.9rem;
+  }
+  .date {
+    font-size: 0.65rem;
+    margin:0 0 0.5rem 0;
+    color: lighten(#2c2c2c, 10%);
+    display:inline-flex;
+    width:9rem;
+    padding: 0 0 0.25rem 0;
+    border-bottom:0rem solid #2c2c2c;
+  }
+  p {
+    max-width:100%;
+    margin:0;
+    font-size:0.85rem;
+    white-space: pre-line;
+  }
+
+  ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+    max-width:100%;
+    li {
+      vertical-align:top;
+    }
+  }
+}
+.cv__tags {
+  list-style: none !important;
+  display: inline-flex;
+  margin: 1rem 0.5rem 1rem 0rem !important;
+  border-left: 0.25rem solid lighten(#2c2c2c, 15%);
+  padding:0 0 0 0.5rem !important;
+  width:30rem;
+  li {
+    display: inline-flex;
+    padding:0.1rem;
+    small {
+      display: block;
+    }
+  }
+}
+
+p.intro {
+  max-width:40rem;
+}
+
+p.intro + p.intro {
+ margin-top:0.5rem;
+}
+
+@media print {
+  .references {
+    background-color:white;
+    height:85%;
+  }
+
+  article {
+    border:0;
+    padding: 0;
+    background-color:transparent;
+    max-width:100%;
+    box-shadow:0 0 0 0 lighten(#ccc, 10%);
+  }
+  @page {
+    size: A4;
+    margin: 5mm; /* change the margins as you want them to be. */
+    margin-bottom:12.5mm; /* change the margins as you want them to be. */
+  }
+
+  .work {
+    li {
+      margin-bottom:2.25rem;
+    } 
+    li:last-child {
+      margin-bottom:0;
+    }
+  }
+
+  p {
+    page-break-inside: avoid;
+    page-break-after: avoid;
+  }
+
+  .print {
+    display:none;
+    margin-top:1rem;
+  }
+
+  header {
+    display: none;
+  }
+
+  .terrance {
+    top:0.5rem !important;
+    max-width:8rem !important;
+  }
+
+  .page-break {
+    page-break-inside:auto;
+    page-break-after:auto
+  }
+
+}

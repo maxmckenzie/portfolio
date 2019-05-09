@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from '../components/Index'
-import WorkHistory from '../components/WorkHistory'
-import Skills from '../components/Skills'
-import Code from '../components/Code'
-import Education from '../components/Education'
-import Projects from '../components/Projects'
-import CV from '../components/CV'
+import Index from '../pages/Index'
+import WorkHistory from '../pages/WorkHistory'
+import Skills from '../pages/Skills'
+import Code from '../pages/Code'
+import Education from '../pages/Education'
+import Projects from '../pages/Projects'
+import CV from '../pages/CV'
 
 Vue.use(Router)
 

@@ -20,20 +20,14 @@ module.exports = {
     contentBase: __dirname + '/dist/',
     hot: true,
     host: 'localhost',
-    port: 8080
+    port: 8080,
+    historyApiFallback: true
   },
   output: {
     path: __dirname + "/dist",
     filename: "bundle.js",
     chunkFilename: '[name].js'
   },
-  // optimization: {
-  //   sideEffects: false,
-  //   splitChunks: {
-  //     hidePathInfo: false,
-  //     minSize: 30000
-  //   }
-  // },
   resolve: {
     extensions: ['.js', '.vue', '.json', '.png', '.jpg', '.jpeg', '.gif', '.svg'],
     alias: {
@@ -86,17 +80,13 @@ module.exports = {
     ]
   },
   plugins: [
-    // new webpack.optimize.DedupePlugin(), // dedupe similar code
-    // new webpack.optimize.UglifyJsPlugin(), // minify everything
-    // new webpack.optimize.AggressiveMergingPlugin(), // Merge chunks
-    new webpack.LoaderOptionsPlugin({
+   new webpack.LoaderOptionsPlugin({
       minimize: true
     }),
     new VueLoaderPlugin(),
     // new CleanWebpackPlugin(['dist']),
     new webpack.NamedModulesPlugin(),
     new webpack.NamedChunksPlugin(),
-    // new FriendlyErrorsWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     // new StylelintPlugin({
     //   configFile: '.stylelintrc',
@@ -119,6 +109,5 @@ module.exports = {
     //   proxy: 'http://localhost:8080/',
     //   reload: false
     // // })
-    // new webpack.optimize.ModuleConcatenationPlugin()
   ]
 }

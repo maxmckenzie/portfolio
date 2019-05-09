@@ -72,6 +72,7 @@ export default {
 .vue-back-to-top{
   position: fixed;
   bottom: 1rem;
+  right:1rem;
   font-weight: 700;
   width: 160px;
   color: #eee;
