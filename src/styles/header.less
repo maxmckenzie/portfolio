@@ -1,0 +1,92 @@
+header {
+  position: relative;
+  margin:1rem 0;
+  @media (max-width: 40rem) {
+    padding-right:20%;
+  }
+
+  h1 {
+    color:@color-neutral-800;
+    padding-left:@gutter-width;
+    font-size:calc(@a1 * 2);
+    line-height: 1.25;
+    font-weight: 900;
+    margin-top: 3rem;
+    @media (max-width: 40rem) {
+      font-size: 9vw
+    }
+  }
+
+  a {
+    color:@color-neutral-800;
+    padding:@gutter-width;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    font-size:@b0;
+    display:inline-block;
+    text-decoration:none;
+    letter-spacing:0.05rem;
+    position: relative;
+    img {
+      width:1.5rem;
+      height:auto;
+    }
+    &:visited,
+    &:active,
+    &:focus {
+      color:@color-neutral-800;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      display: inline-block;
+      height: 1em;
+      width: 100%;
+      border-bottom: 0.15rem solid @color-neutral-600;
+      margin-top: 10px;
+      opacity: 0;
+      transition: opacity 0.35s, transform 0.35s;
+      transform: scale(0,1);
+    }
+    &:hover:after,
+    .router-link-exact-active:after {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+
+  a:first-child {
+    padding-right:0;
+  }
+}
+
+.icon-links {
+  position: fixed;
+  right: 1rem;
+  top:1rem;
+}
+
+.icon-link {
+  border:2px solid @color-neutral-300;
+  padding:0;
+  border-radius:100%;
+  height:1.5rem;
+  width:1.5rem;
+  margin:0 0.25rem;
+  overflow:hidden;
+  &:hover {
+    text-decoration: none;
+    .drop-shadow(1)
+  }
+}
+
+.terrance {
+  position: fixed;
+  top:5rem;
+  right:0;
+  width:20%;
+  max-width:250px;
+  z-index: -1;
+}

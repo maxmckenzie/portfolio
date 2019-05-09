@@ -1,0 +1,21 @@
+.container {
+  max-width: 60rem;
+  margin:0 auto;
+}
+
+.content {
+  padding-left:@gutter-width;
+}
+
+.slide-fade-enter-active {
+  transition: all .5s ease;
+  transition-delay: .5s
+}
+.slide-fade-leave-active {
+  transition: all .5s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(40px);
+  opacity: 0;
+}

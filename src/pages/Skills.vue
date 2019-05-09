@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Abilites from './Abilities.vue'
+import Abilites from '@/components/Abilities.vue'
 
 export default {
   name: 'skills',
@@ -14,5 +14,5 @@ export default {
   components: {
     abilites: Abilites
   }
-}
+};
 </script>
