@@ -6036,6 +6036,11 @@ relateurl@0.2.x:
   resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
   integrity sha1-VNvzd+UUQKypCkzSdGANP/LYiKk=
 
+remixicon@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/remixicon/-/remixicon-1.2.0.tgz#a0ba1af99cee18f3a4b0eec4b1b474c256c28fe0"
+  integrity sha512-EyniMgkc4+mzrv5F/RUi6l4GH5igSOelO9O6QmU7VVKEfhmOW1RVakwXXK2I22eiffuWDgau1fvos4Ge2spmag==
+
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/remove-trailing-separator/-/remove-trailing-separator-1.1.0.tgz#c24bce2a283adad5bc3f58e0d48249b92379d8ef"
