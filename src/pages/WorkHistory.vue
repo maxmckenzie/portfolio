@@ -1,7 +1,7 @@
 <template>
     <div class="content work">
       <ul class="no-list-style">
-        <li v-for="job in apiData.workhistory">
+        <li v-for="job in apiData.workHistory">
           <h2 class="work__title">{{ job.title }}</h2>
           <ul class="no-list-style work__tags">
             <li><small><b><i class="remixicon-stack-line"></i></b></small></li>
@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: 'workhistory',
+  name: 'workHistory',
   props: ['apiData']
 };
 </script>
