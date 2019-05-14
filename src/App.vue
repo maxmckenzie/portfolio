@@ -7,7 +7,7 @@
       <router-link :to=" { name: 'Skills' }">SKILLS</router-link>
       <!-- <router-link :to=" { name: 'Code' }">Code</router-link> -->
       <router-link :to=" { name: 'Projects' }">PR0JECTS</router-link>
-      <router-link :to=" { name: 'CV' }">PRINT-CV</router-link>
+      <router-link :to=" { name: 'CV' }">CV (Résumé)</router-link>
       <a href="https://seam.es" target="_blank">seam.es</a>
       <div class="icon-links">
         <a href="https://stackoverflow.com/story/maxmckenzie" target="_blank" class="icon-link"><img src="./static/stackoverflow.svg"></a>
