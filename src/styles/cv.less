@@ -122,10 +122,11 @@ article {
   }
   .date {
     font-size: 0.65rem;
-    margin:0 0 0.5rem 0;
+    font-weight:bold;
+    margin:0 0 0 0;
     color: lighten(#2c2c2c, 10%);
     display:inline-flex;
-    width:9rem;
+    width:100%;
     padding: 0 0 0.25rem 0;
     border-bottom:0rem solid #2c2c2c;
   }
@@ -174,6 +175,14 @@ p.intro + p.intro {
   .references {
     background-color:white;
     height:85%;
+    li {
+      break-inside: avoid;
+    }
+  }
+
+  .date {
+    margin:0;
+    width:100%;
   }
 
   article {
@@ -187,11 +196,13 @@ p.intro + p.intro {
     size: A4;
     margin: 5mm; /* change the margins as you want them to be. */
     margin-bottom:12.5mm; /* change the margins as you want them to be. */
+    margin-top:10mm;
   }
 
   .work {
     li {
-      margin-bottom:2.25rem;
+      margin-bottom:1rem;
+      break-inside: avoid;
     } 
     li:last-child {
       margin-bottom:0;
@@ -199,8 +210,7 @@ p.intro + p.intro {
   }
 
   p {
-    page-break-inside: avoid;
-    page-break-after: avoid;
+    break-inside: avoid;
   }
 
   .print {

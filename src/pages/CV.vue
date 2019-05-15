@@ -10,8 +10,10 @@
         <div class="work">
           <ul>
             <li v-for="role in apiData.workHistory">
-              <h3>{{ role.title }}</h3>
-              <p class="date">{{ role.date }}</p>
+              <div class="work-title">
+                <h3>{{ role.title }}</h3>
+                <span class="date">{{ role.date }}</span>
+              </div>
               <!-- <ul class="cv__tags">
                 <li v-for="tag in role.tags">
                   <small>{{ tag }},</small>

@@ -80,13 +80,13 @@ module.exports = {
     ]
   },
   plugins: [
-   new webpack.LoaderOptionsPlugin({
+    new webpack.LoaderOptionsPlugin({
       minimize: true
     }),
     new VueLoaderPlugin(),
     // new CleanWebpackPlugin(['dist']),
-    new webpack.NamedModulesPlugin(),
-    new webpack.NamedChunksPlugin(),
+    // new webpack.NamedModulesPlugin(),
+    // new webpack.NamedChunksPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     // new StylelintPlugin({
     //   configFile: '.stylelintrc',
