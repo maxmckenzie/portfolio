@@ -47,7 +47,7 @@ export default {
   },
   methods: {
     getDetails () {
-      this.$http.get('https://api.maxmckenzie.uk')
+      this.$http.get('https://portfolio-api-scraper.herokuapp.com')
         .then((responce) => {
           this.apiData = responce.data
         }, (error) => {
