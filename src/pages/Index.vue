@@ -36,9 +36,10 @@ export default {
 
 <style>
   .calendar {
-    max-width: 35rem;
+    max-width: 34rem;
     border: 0;
     margin: 0;
     box-shadow: 0 1px 3px 0 hsla(0,0%,0%, 0.2);
+    padding: 1.5rem 1rem 0 1rem;
   }
 </style>
