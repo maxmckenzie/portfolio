@@ -72,7 +72,7 @@
 </template>
 
 <script>
-import Abilites from '@/components/Abilities.vue'
+import Abilites from '../components/Abilities.vue'
 
 export default {
   name: 'cv',
