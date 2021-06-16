@@ -39,5 +39,6 @@ export default {
     max-width: 35rem;
     border: 0;
     margin: 0;
+    box-shadow: 0 1px 3px 0 hsla(0,0%,0%, 0.2);
   }
 </style>
