@@ -28,7 +28,7 @@
 
 <script>
 import BackToTop from './components/BackToTop'
-import '../node_modules/remixicon/fonts/remixicon.css'
+import 'remixicon/fonts/remixicon.css'
 
 export default {
   name: 'app',
