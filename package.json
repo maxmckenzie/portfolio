@@ -5,12 +5,14 @@
   "author": "Max McKenzie <hello@maxmckenzie.uk>",
   "private": true,
   "scripts": {
-    "dev": "parcel index.html"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "alias": {
     "vue": "./node_modules/vue/dist/vue.common.js"
   },
   "dependencies": {
+    "parcel-bundler": "^1.12.5",
     "remixicon": "^2.5.0",
     "vue": "^2.6.14",
     "vue-hot-reload-api": "^2.3.4",
