@@ -4,7 +4,7 @@
         <li v-for="job in apiData.workHistory">
           <h2 class="work__title">{{ job.title }}</h2>
           <ul class="no-list-style work__tags">
-            <li><small><b><i class="remixicon-stack-line"></i></b></small></li>
+            <li><small><b><i class="ri-stack-line"></i></b></small></li>
             <li v-for="tag in job.tags">
               <small>{{ tag }},</small>
             </li>

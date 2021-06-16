@@ -1,6 +1,6 @@
 <template>
   <div class="content cv-wrapper">
-    <a href="javascript:window.print()" class="print"><span>Print CV</span>&nbsp;<i class="remixicon-printer-line"></i></a>
+    <a href="javascript:window.print()" class="print"><span>Print CV</span>&nbsp;<i class="ri-printer-line"></i></a>
     <article class="cv">
       <h1>Max M<sup>c</sup>Kenzie</h1>
       <h2>Full Stack Developer and UI Designer</h2>
