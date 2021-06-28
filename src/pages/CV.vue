@@ -29,7 +29,7 @@
           <p><b>Portfolio:</b> <a href="https://maxmckenzie.uk">maxmckenzie.uk</a></p>
           <p><b>Email:</b> <a href="mailto:hello@maxmckenzie.uk">hello@maxmckenzie.uk</a></p>
           <p><b>GitHub:</b> <a href="https://github.com/maxmckenzie">/maxmckenzie</a></p>
-          <p><b>StafckOverflow:</b> <a href="https://stackoverflow.com/story/maxmckenzie">@xam</a></p>
+          <p><b>StackOverflow:</b> <a href="https://stackoverflow.com/story/maxmckenzie">@xam</a></p>
           <div class="education">
             <h3>Education</h3>
             <ul>
@@ -38,6 +38,10 @@
                 <p class="date">{{institute.date}}</p>
               </li>
             </ul>
+          </div>
+          <div class="cv-skills">
+            <h3>Skills</h3>
+            <p><span>Go</span><span>JavaScript (ECMA Script)</span><span>TypeScript</span><span>PHP</span><span>Ruby</span><span>Vue</span><span>React</span><span>Redux</span><span>Babel</span><span>Parcel</span><span>Rollup</span><span>Grunt</span><span>Webpack</span><span>Nightwatch</span><span>Cypress</span><span>Jest</span><span>Mocha</span><span>Chai</span><span>Sinon</span><span>Supertest</span><span>Express</span><span>Koa</span><span>Heroku</span><span>AWS</span><span>Digitl Ocean</span><span>GCP</span><span>CI/CI</span><span>GraphQL</span><span>MySQl</span><span>PostgreSQl</span><span>Puppeteer</span><span>Mirage</span><span>Web Components</span><span>Stencil</span><span>Storybook</span><span>Less</span><span>Sass</span><span>Stylus</span><span>GitHub</span><span>GitLab</span><span>BitBucket</span><span>Atlassian Suite</span><span>JWT</span><span>OAuth</span><span>Gherkin</span><span>RSpec</span><span>Adobe Creative Cloud</span><span>Office suites</span><span>Affinity Design/Photo/Publisher</span><span>Sketch</span><span>Figma</span><span>Invision</span></p>
           </div>
           <div class="references">
             <h3>References</h3>
