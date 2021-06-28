@@ -3,7 +3,7 @@
     <h2>More Specific Technical Abilities</h2>
     <ul>
       <li>
-        Automated QA testing with Cucumber, Nightwatch, Mocha, Chai and Supertest
+        Automated QA testing with Cucumber, Cypress, Jest, Karma, Nightwatch, Mocha, Chai and Supertest
       </li>
       <li>
         Project management and team lead
@@ -12,37 +12,37 @@
         UI design and development
       </li>
       <li>
-        DevOps automation with docker and kubernetes on Azure, Google Cloud, AWS and Heroku
+        DevOps automation with Docker and Kubernetes on Azure, Google Cloud, AWS and Heroku
       </li>
       <li>
-        Design, linguistic and code style guides.
+        Designing linguistic and code style guides
       </li>
       <li>
-        Building user interface sketches, storyboards and interactive prototypes.
+        Building user interface sketches, storyboards and interactive prototypes
       </li>
       <li>
-        Responsive and adaptive design for multiple devices and pixel densities.
+        Responsive and adaptive design for multiple devices and pixel densities
       </li>
       <li>
         Building and implementing APIs
       </li>
       <li>
-        Security and regulatory compliance.
+        Security and regulatory compliance
       </li>
       <li>
-        Developing a project's information architecture and content strategy.
+        Developing a project's information architecture and content strategy
       </li>
       <li>
-        Collecting and creating copy, content, micro-copy and brand persona.
+        Collecting and creating copy, content, micro-copy and brand person
       </li>
       <li>
-        Page speed optimization by design and run-time software.
+        Page speed optimization by design and run-time software
       </li>
       <li>
         High fidelity mockups using Adobe Photoshop, Indesign, and Affinity Designer
       </li>
       <li>
-        Creating brand identity and design assets.
+        Creating brand identities and design assets
       </li>
     </ul>
   </div>
