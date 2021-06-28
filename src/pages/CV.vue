@@ -4,8 +4,8 @@
     <article class="cv">
       <h1>Max M<sup>c</sup>Kenzie</h1>
       <h2>Full Stack Developer and UI Designer</h2>
-      <p class="intro">Based in Barcelona. I enjoy designing and building APIs and UIs with modern tools like ES6, Vue, React, Webpack, Nightwatch, Mocha, PostgreSQL, and GraphQL.</p>
-      <p class="intro">Over the course of my nine-year career, I have worked for agencies, SaaS providers, and publishers. Taking on the roles of technical writer, tech lead, project manager, consultant, company director, and of course, front-line pixel pusher.</p>
+      <p class="intro">I’m a full stack developer based in Barcelona. I enjoy designing and building APIs and UIs with modern tools like ES6, Vue, React, Webpack, Cypress, Mocha, PostgreSQL, and GraphQL.</p>
+      <p class="intro">Over the course of my fourteen-year career I’ve worked for agencies, SaaS providers and publishers. I’ve taken on the role of technical writer, tech lead, project manager, consultant, company director, and of course; front-line pixel pusher.</p>
       <div class="cv-content">
         <div class="work">
           <ul>

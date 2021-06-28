@@ -56,11 +56,11 @@ article {
   page-break-after  : auto ;
   width:65%;
   margin-right:2%;
-  p {
-    column-count: 2;
-    column-gap:0.75rem;
-    orphans: 3;
-  }
+  // p {
+  //   column-count: 2;
+  //   column-gap:0.75rem;
+  //   orphans: 3;
+  // }
 }
 
 .cv-content > div.info {
@@ -103,7 +103,7 @@ article {
     color:@color-neutral-800;
   }
   h1 {
-    margin:0 0 0.75rem 0;
+    margin:0 0 0.5rem 0;
     font-size:2rem;
   }
   h2 {
@@ -133,8 +133,9 @@ article {
   p {
     max-width:100%;
     margin:0;
-    font-size:0.85rem;
+    font-size: 0.85rem;
     white-space: pre-line;
+    line-height: 1.4;
   }
 
   ul {
@@ -180,6 +181,10 @@ p.intro + p.intro {
     }
   }
 
+  .intro {
+    width:80%;
+  }
+
   .date {
     margin:0;
     width:100%;
@@ -200,6 +205,8 @@ p.intro + p.intro {
   }
 
   .work {
+    width: 80%;
+
     li {
       margin-bottom:1rem;
       break-inside: avoid;
@@ -209,8 +216,13 @@ p.intro + p.intro {
     }
   }
 
+  .info {
+    width: 20%;
+  }
+
   p {
     break-inside: avoid;
+    font-size: 0.65rem;
   }
 
   .print {

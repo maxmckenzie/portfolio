@@ -46,7 +46,7 @@ export default {
   },
   methods: {
     getDetails () {
-      this.$http.get('https://portfolio-api-scraper.herokuapp.com')
+      this.$http.get('http://localhost:5000')
         .then((responce) => {
           this.apiData = responce.data
         }, (error) => {
