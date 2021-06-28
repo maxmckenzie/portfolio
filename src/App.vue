@@ -6,7 +6,7 @@
       <router-link :to=" { name: 'WorkHistory' }">W0RK</router-link>
       <router-link :to=" { name: 'Skills' }">SKILLS</router-link>
       <a href="https://www.notion.so/de0f87f0068d47a5b842a4fc12d03075?v=ae5aef2cafbc489b8a3b7bddca2edae8" target="_blank">PORTFOLIO</a>
-      <router-link :to=" { name: 'Projects' }">PR0JECTS</router-link>
+      <!-- <router-link :to=" { name: 'Projects' }">PR0JECTS</router-link> -->
       <router-link :to=" { name: 'CV' }">CV</router-link>
       <a href="https://seam.es" target="_blank">seam.es</a>
       <div class="icon-links">
