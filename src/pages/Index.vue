@@ -1,7 +1,7 @@
 <template>
   <div class="content">
-    <p>I’m a full stack developer based in Barcelona. I enjoy designing and building APIs and UIs with modern tools like ES6, Vue, React, Webpack, Nightwatch, Mocha, PostgreSQL, and GraphQL.</p>
-    <p>Over the course of my 14 year career, I have worked for agencies, SaaS providers and publishers. I've taken on the roles of technical writer, tech lead, project manager, consultant, company director, and of course, front-line pixel pusher.</p>
+    <p>I enjoy designing and building APIs and UIs with modern tools like ES6, Vue, React, Webpack, Cypress, Mocha, PostgreSQL, and GraphQL.</p>
+    <p>Over the course of my fourteen-year career I’ve worked for agencies, SaaS providers and publishers. I’ve taken on the role of technical writer, tech lead, project manager, consultant, company director, and of course; front-line pixel pusher.</p>
     <h3>Recent github contributions</h3>
     <div class="calendar">
       <div class="loading">
