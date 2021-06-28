@@ -48,7 +48,7 @@
               </li>
               <li class="reference">
                 <p>"Max has a full understanding of web technologies, from designing bespoke solutions from the ground up in the command line to browser/UI automation and everything in between".</p>
-                <p>Jack Fenton <br>Team Leader </p>
+                <p>Jack Fenton <br>Team Leader at BookingBug</p>
               </li>
               <li class="reference">
                 <p>"Amazingly talented developer and technical writer. Max is a great self-starter who with loose guidelines can be trusted to return amazing work. Would recommend to anyone who was in need of his skill set".</p>
@@ -57,7 +57,7 @@
               <div class="page-break"></div>
               <li class="reference">
                 <p>"Max, Max, Max. How I miss this man. I really put him through his paces when he joined the team. But he was more than up to the challenge. He's a great problem solver, a pragmatist and a pretty fine Developer".</p>
-                <p>Stewart Birch <br>Technical Director at Cohaesus</p>
+                <p>Stewart Birch <br>Head of Frontend at tribal Worldwide</p>
               </li>
               <li class="reference">
                 <p>"Max is a highly skilled and reliable developer. I worked with Max for one year at Tribal Worldwide and during that time I quickly got to know and appreciate Max’s skills. Max has good knowledge of front end development, he has experience with working on large scale web sites for big name clients, he is able to work under pressure and can be relied upon to devise fitting solutions given tight time constraints which I feel is a valuable trait which is lacking in a lot of todays developers".</p>
