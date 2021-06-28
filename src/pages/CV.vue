@@ -43,8 +43,12 @@
             <h3>References</h3>
             <ul>
               <li class="reference">
+                <p>"Max is one of the most bright, talented and creative developers I've ever met. He leads the team through any project in a natural way, with his outstanding communication and personal skills and his deep knowledge about the state of the art on any technical issue. He's a safe bet!".</p>
+                <p>Pedro Costoya <br>Manager at BeRepublic</p>
+              </li>
+              <li class="reference">
                 <p>"Max has a full understanding of web technologies, from designing bespoke solutions from the ground up in the command line to browser/UI automation and everything in between".</p>
-                <p>Jack Fenton <br>Test Lead at BookingBug</p>
+                <p>Jack Fenton <br>Team Leader </p>
               </li>
               <li class="reference">
                 <p>"Amazingly talented developer and technical writer. Max is a great self-starter who with loose guidelines can be trusted to return amazing work. Would recommend to anyone who was in need of his skill set".</p>
