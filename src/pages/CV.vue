@@ -2,24 +2,23 @@
   <div class="content cv-wrapper">
     <a href="javascript:window.print()" class="print"><span>Print CV</span>&nbsp;<i class="ri-printer-line"></i></a>
     <article class="cv">
-      <h1>Max M<sup>c</sup>Kenzie</h1>
-      <h2>Full Stack Developer and UI Designer</h2>
-      <p class="intro">I’m a full stack developer based in Barcelona. I enjoy designing and building APIs and UIs with modern tools like ES6, Vue, React, Webpack, Cypress, Mocha, PostgreSQL, and GraphQL.</p>
-      <p class="intro">Over the course of my fourteen-year career I’ve worked for agencies, SaaS providers and publishers. I’ve taken on the role of technical writer, tech lead, project manager, consultant, company director, and of course; front-line pixel pusher.</p>
+      <h1>Max M<sup>c</sup>Kenzie <small>Full Stack developer &amp; designer</small></h1>
+      <p class="intro">Based in Barcelona. I enjoy designing and building APIs and UIs with modern tools like ES6, Vue, React, Webpack, Cypress, Mocha, PostgreSQL, and GraphQL. Over the course of my fourteen-year career I’ve worked for agencies, SaaS providers and publishers; taking on the role of technical writer, tech lead, project manager, consultant, company director, and of course; front-line pixel pusher.</p>
       <div class="cv-content">
         <div class="work">
           <ul>
             <li v-for="role in apiData.workHistory">
               <div class="work-title">
-                <h3>{{ role.title }}</h3>
+                <h3>{{ role.title }}&nbsp;</h3>
                 <span class="date">{{ role.date }}</span>
+                <p>{{ role.description }}</p>
+                <div class="cv-skills-alt">
+                  <strong>Tech Stack</strong>: 
+                  <span v-for="skill in role.tags">
+                    {{ tagIndex(skill) }}
+                  </span>
+                </div>
               </div>
-              <!-- <ul class="cv__tags">
-                <li v-for="tag in role.tags">
-                  <small>{{ tag }},</small>
-                </li>
-              </ul> -->
-              <p>{{ role.description }}</p>
             </li>
           </ul>
         </div>
@@ -87,6 +86,241 @@ export default {
   props: ['apiData'],
   components: {
     abilites: Abilites
+  },
+  methods: {
+    tagIndex(tag) {
+      // hugeeeeeee switch case to format the tags from stackoverflow
+      // future better solution pending :D 
+      switch(tag) {
+        case 'vue.js':
+          return 'Vue'
+        break;
+        case 'reactjs':
+          return 'React'
+        break;
+        case 'node':
+          return 'Node'
+        break;
+        case 'web-component':
+          return 'Web components'
+        break;
+        case 'stenciljs':
+          return 'StencilJS'
+        break;
+        case 'storybook':
+          return 'Storybook'
+        break;
+        case 'nightwatch.js':
+          return 'Nightwatch'
+        break;
+        case 'jestjs':
+          return 'Jest'
+        break;
+        case 'mocha.js':
+          return 'Mocha'
+        break;
+        case 'chai':
+          return 'Chai'
+        break;
+        case 'miragejs':
+          return 'Mirage'
+        break;
+        case 'google-cloud-platform':
+          return 'GCP'
+        break;
+        case 'graphql':
+          return 'GraphQL'
+        break;
+        case 'heroku':
+          return 'Heroku'
+        break;
+        case 'gitlab':
+          return 'Gitlab'
+        break;
+        case 'cypress':
+          return 'Cypress'
+        break;
+        case 'vercel':
+          return 'Vercel'
+        break;
+        case 'cloudflare':
+          return 'CloudFlare'
+        break;
+        case 'github-actions':
+          return 'GitHub Actions CI/CD'
+        break;
+        case 'postgresql':
+          return 'PostgreSQL'
+        break;
+        case 'three.js':
+          return 'ThreeJS'
+        break;
+        case 'feathersjs':
+          return 'FeathersJS'
+        break;
+        case 'devops':
+          return 'Devops'
+        break;
+        case 'docker':
+          return 'Docker'
+        break;
+        case 'azure':
+          return 'Azure'
+        break;
+        case 'auth0':
+          return 'OAuth'
+        break;
+        case 'apollo':
+          return 'Apollo'
+        break;
+        case 'azure-devops':
+          return 'Azure DevOps'
+        break;
+        case 'yaml':
+          return 'YAML'
+        break;
+        case 'saml':
+          return 'SAML'
+        break;
+        case 'jwt':
+          return 'JWT'
+        break;
+        case 'sinon':
+          return 'Sinon'
+        break;
+        case 'webpack':
+          return 'Webpack'
+        break;
+        case 'encryption':
+          return 'Encryption'
+        break;
+        case 'authentication':
+          return 'OAuth'
+        break;
+        case 'oauth-2.0':
+          return 'OAuth 2'
+        break;
+        case 'selenium-webdriver':
+          return 'Selenium'
+        break;
+        case 'node.js':
+          return 'Node'
+        break;
+        case 'babeljs':
+          return 'Babel'
+        break;
+        case 'ruby':
+          return 'Ruby'
+        break;
+        case 'capybara':
+          return 'Capybara'
+        break;
+        case 'cucumber':
+          return 'Cucumber'
+        break;
+        case 'rspec':
+          return 'RSpec'
+        break;
+        case 'gherkin':
+          return 'Gherkin'
+        break;
+        case 'cordova':
+          return 'Cordova'
+        break;
+        case 'stylus':
+          return 'Stylus'
+        break;
+        case 'gruntjs':
+          return 'Grunt'
+        break;
+        case 'twig':
+          return 'Twig'
+        break;
+        case 'express':
+          return 'Express'
+        break;
+        case 'sass':
+          return 'Sass'
+        break;
+        case 'less':
+          return 'Less'
+        break;
+        case 'oojavascript':
+          return 'ECMA6'
+        break;
+        case 'jquery':
+          return 'JQuery'
+        break;
+        case 'svn':
+          return 'SVN'
+        break;
+        case 'git':
+          return 'Git'
+        break;
+        case 'css':
+          return 'CSS'
+        break;
+        case 'oophp':
+          return 'PHP'
+        break;
+        case 'html':
+          return 'HTML'
+        break;
+        case 'mysql':
+          return 'MySQL'
+        break;
+        case 'handlebars.js':
+          return 'Handlebars'
+        break;
+        case 'underscore.js':
+          return 'Underscore'
+        break;
+        case 'assemble':
+          return 'Assemble'
+        break;
+        case 'larevel':
+          return 'Larevel'
+        break;
+        case 'photoshop':
+          return 'Photoshop'
+        break;
+        case 'commonjs':
+          return 'CommonJS'
+        break;
+        case 'java':
+          return 'Java'
+        break;
+        case 'grails':
+          return 'Grails'
+        break;
+        case 'adobe-illustrator':
+          return 'Adobe Illustrator'
+        break;
+        case 'php':
+          return 'PHP'
+        break;
+        case 'adobe-indesign':
+          return 'Adobe InDesign'
+        break;
+        case 'wordpress':
+          return 'WordPress'
+        break;
+        case 'laravel':
+          return 'Laravel'
+        break;
+        case 'symfony':
+          return 'Symfony'
+        break;
+        case 'citrix':
+          return 'Citrix'
+        break;
+        case 'vuex':
+          return 'Vuex'
+        break;
+        default:
+          return tag
+      }
+    }
   }
 }
 </script>

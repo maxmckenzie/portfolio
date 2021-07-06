@@ -100,35 +100,47 @@ article {
 
 .cv {
   h1, h2 {
-    color:@color-neutral-800;
+    color: @color-neutral-800;
   }
   h1 {
     margin:0 0 0.5rem 0;
     font-size:2rem;
+    color: @color-neutral-800;
+
+    small {
+      opacity: 0.6;
+      font-size: 0.6em;
+    }
   }
   h2 {
     margin:1rem 0rem 0.5rem 0rem;
     font-weight: 800;
     font-size:1.1rem;
+    color: @color-neutral-800;
   }
   h3 {
-    margin:1rem 0rem 0.25rem 0rem;
+    margin:1rem 0rem 0 0rem;
     font-size:1rem;
+    color: @color-neutral-800;
   }
   h4 {
     margin:0.5rem 0rem 0.25rem 0rem;
     font-weight:500;
     font-size:0.9rem;
+    color: @color-neutral-800;
   }
   .date {
-    font-size: 0.65rem;
+    font-size: 0.6rem !important;
     font-weight:bold;
-    margin:0 0 0 0;
-    color: lighten(#2c2c2c, 10%);
     display:inline-flex;
     width:100%;
     padding: 0 0 0.25rem 0;
     border-bottom:0rem solid #2c2c2c;
+    margin:0;
+    width:100%;
+    color: @color-neutral-800 !important;
+    opacity: 0.6;
+    margin-bottom: 0.5rem;
   }
   p {
     max-width:100%;
@@ -136,6 +148,7 @@ article {
     font-size: 0.85rem;
     white-space: pre-line;
     line-height: 1.4;
+    color: @color-neutral-800;
   }
 
   ul {
@@ -169,39 +182,77 @@ p.intro {
 }
 
 p.intro + p.intro {
- margin-top:0.5rem;
+  margin-top:0.5rem;
+}
+
+.cv-skills,
+.cv-skills-alt {
+  span {
+    font-size: 0.75rem !important;
+    line-height: 1;
+    background-color: #e1ecf4;
+    color: #39739d;
+    display: inline-block;
+    margin: 0.15rem 0.25rem 0.15rem 0;
+    padding: 0.25rem;
+    border-radius: 0.25rem
+  }
+}
+
+.cv-skills-alt {
+  line-height: 1.75;
+  font-size: 0.6rem;
+  margin-top: 0.25rem;
+
+  span {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-size: 0.65rem !important;
+
+    &:after {
+      content: ',';
+      position: absolute;
+      right: -0.175rem;
+      bottom: 0;
+    }
+    
+    &:last-child:after {
+      content: '';
+    }
+  }
+
+  span {
+    margin-right: 0.4rem;
+  }
 }
 
 @media print {
+  @print-font-size: 0.65rem !important;
+  body {
+    font-size: 10px !important;
+  }
+
   .references {
     background-color:white;
     height:85%;
+    font-size: @print-font-size;
     li {
       break-inside: avoid;
     }
   }
 
-  .cv-skills {
-    p > span {
-      font-size: 0.8rem !important;
-      line-height: 1;
-      background-color: #e1ecf4;
-      color: #39739d;
-      display: inline-block;
-      margin: 0.15rem 0.25rem 0.15rem 0;
-      padding: 0.25rem;
-      border-radius: 0.25rem;
-      margin-bottom: 5rem;
-    }
-  }
-
   .intro {
-    width:80%;
+    max-width: 80% !important;
+    line-height: 1.5 !important;
   }
 
   .date {
     margin:0;
     width:100%;
+    color: @color-neutral-800 !important;
+    opacity: 0.6;
   }
 
   article {
@@ -213,12 +264,12 @@ p.intro + p.intro {
   }
   @page {
     size: A4;
-    margin: 5mm; /* change the margins as you want them to be. */
-    margin-bottom:12.5mm; /* change the margins as you want them to be. */
-    margin-top:10mm;
+    margin: 10mm; /* change the margins as you want them to be. */
+    margin-bottom: 6mm; /* change the margins as you want them to be. */
+    margin-top: 6mm;
   }
 
-  .references {
+  .references > p {
     break-inside: avoid;
   }
 
@@ -240,7 +291,30 @@ p.intro + p.intro {
 
   p {
     break-inside: avoid;
-    font-size: 0.65rem;
+    font-size: @print-font-size;
+    line-height: 1.5 !important;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem !important;
+    small {
+      opacity: 0.6;
+      font-size: 0.5em !important;
+    }
+  }
+
+  h3 {
+    font-size: 0.8rem !important;
+    margin-bottom: 0.2rem !important;
+    small {
+      opacity: 0.6;
+      font-size: 0.75em;
+    }
+  }
+
+  .date {
+    margin-bottom: 0.5rem !important;
   }
 
   .print {
@@ -253,8 +327,10 @@ p.intro + p.intro {
   }
 
   .terrance {
-    top:0.5rem !important;
-    max-width:8rem !important;
+    top:-0.5rem;
+    right:-0.5rem;
+    max-width: 7rem;
+    position: absolute;
   }
 
   .page-break {
@@ -262,17 +338,31 @@ p.intro + p.intro {
     page-break-after:auto
   }
 
-}
+  .cv-skills {
+    span {
+      font-size: @print-font-size;
+      line-height: 1 !important;
+      color: #39739d;
+      background-color: transparent !important;
+      display: inline-block;
+      padding: 0.05rem;
+      position: relative;
 
-.cv-skills {
-  p > span {
-    font-size: 0.8rem !important;
-    line-height: 1;
-    background-color: #e1ecf4;
-    color: #39739d;
-    display: inline-block;
-    margin: 0.15rem 0.25rem 0.15rem 0;
-    padding: 0.25rem;
-    border-radius: 0.25rem
+      &:after {
+        content: ',';
+        color: #39739d;
+        position: absolute;
+        right: -0.1rem;
+        bottom: 0.05rem;
+      }
+
+      &:last-child:after {
+        content: '';
+      }
+    }
+  }
+
+  .cv-skills-alt {
+    line-height: 1.5 !important;
   }
 }
